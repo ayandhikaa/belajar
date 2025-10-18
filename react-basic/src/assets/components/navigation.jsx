@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 const Navigation = ({ listItem }) => {
     return (
         <nav className="bg-green-500 p-4 flex justify-between">
@@ -5,7 +7,7 @@ const Navigation = ({ listItem }) => {
             <ul className="flex flex-row gap-8 p-5"> 
                 {listItem.map((item) => (
                 <li className="hover:text-white font-semibold" key={item.id}>
-                    <a href="{item.url}">{item.name}</a>
+                    <Link to={item.url}>{item.name}</Link>
                 </li>
                 ))}
             </ul>

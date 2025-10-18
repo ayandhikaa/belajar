@@ -1,5 +1,6 @@
 import Navigation from './assets/components/navigation.jsx'
 import Footer from './assets/components/footer.jsx'
+import { Outlet } from 'react-router-dom'
 
 function App() {
     const listItem = [
@@ -27,8 +28,8 @@ function App() {
  return (
     <>
         <Navigation listItem={listItem} />
-        <main className='h-screen'>
-            <h1 className='text-4xl font-bold text-center'>Hello World</h1>
+        <main className='mx-auto my-10 max-w-6xl px-20 py-20 h-screen bg-green-100'>
+            <Outlet />
         </main>
         <Footer />
     </>
