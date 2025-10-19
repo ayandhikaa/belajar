@@ -1,7 +1,9 @@
+import TitleHeader from "../components/TitleHeader";
+
 const ContactView = () => {
     return (
         <div>
-            <h1>Contact View</h1>
+            <TitleHeader title="Contact"/>
         </div>
     )
 }

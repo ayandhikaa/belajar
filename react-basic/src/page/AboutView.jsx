@@ -1,8 +1,10 @@
+import TitleHeader from "../components/TitleHeader";
+
 const AboutView = () => {
     return (
-        <div>
-            <h1>About View</h1>
-        </div>
+        <>
+            <TitleHeader title="About"/>
+        </>
     )
 }
 

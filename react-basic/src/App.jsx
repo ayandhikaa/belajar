@@ -1,5 +1,5 @@
-import Navigation from './assets/components/navigation.jsx'
-import Footer from './assets/components/footer.jsx'
+import Navigation from './components/navigation.jsx'
+import Footer from './components/footer.jsx'
 import { Outlet } from 'react-router-dom'
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
  return (
     <>
         <Navigation listItem={listItem} />
-        <main className='mx-auto my-10 max-w-6xl px-20 py-20 h-screen bg-green-100'>
+        <main className='mx-auto my-10 max-w-6xl px-20 py-20 h-screen rounded-xl bg-green-100'>
             <Outlet />
         </main>
         <Footer />
